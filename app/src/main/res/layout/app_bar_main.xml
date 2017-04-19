@@ -45,6 +45,10 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:background="@drawable/fondo"
+
+            app:theme="@style/NavigationDrawerStyle"
+
+            app:itemTextColor="@color/colorWhite"
             android:fitsSystemWindows="true"
             app:menu="@menu/menu_principal" />
 
