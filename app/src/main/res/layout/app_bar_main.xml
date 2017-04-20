@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fondo"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -39,20 +40,93 @@
         </android.support.design.widget.AppBarLayout>
 
 
-        <android.support.design.widget.NavigationView
-            android:id="@+id/nav_view"
+
+        <Spinner
+            android:id="@+id/campo"
+            android:textAlignment="center"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
-            android:background="@drawable/fondo"
+            android:layout_height="60dp"/>
 
-            app:theme="@style/NavigationDrawerStyle"
+        <Spinner
+            android:id="@+id/sector"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+        <Spinner
+            android:id="@+id/lote"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-            app:itemTextColor="@color/colorWhite"
-            android:fitsSystemWindows="true"
-            app:menu="@menu/menu_principal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:paddingTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_tecnica_55dp"
+                    android:background="@drawable/transparente40"
+                    android:textColor="@color/colorWhite"
+                    android:text="TECNICAS" />
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:paddingTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_mip_55dp"
+                    android:background="@drawable/transparente40"
+                    android:textColor="@color/colorWhite"
+                    android:text="MIP" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
 
-
-    </LinearLayout>
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:paddingTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableTop="@drawable/ic_aplicaciones_55dp"
+                    android:background="@drawable/transparente40"
+                    android:textColor="@color/colorWhite"
+                    android:text="APLICACIONES" />
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:paddingTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableTop="@drawable/ic_anotaciones_55dp"
+                    android:background="@drawable/transparente40"
+                    android:textColor="@color/colorWhite"
+                    android:text="ANOTACIONES" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

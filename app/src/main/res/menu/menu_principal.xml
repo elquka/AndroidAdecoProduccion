@@ -3,21 +3,25 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_autorenew_black_24dp"
-            android:title="Sincronizar" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_low_priority_black_24dp"
-            android:title="Campaña" />
-        <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_important_devices_black_24dp"
-            android:title="Ir a Sitio" />
+            android:title="MIP" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_autorenew_black_24dp"
+            android:title="Técnicas" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_aplicaciones_55dp"
+            android:title="Aplicaciones" />
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_place_black_24dp"
-            android:title="Ver Ubicación" />
+            android:title="Galeria" />
+        <item
+            android:id="@+id/nav_anotaciones"
+            android:icon="@drawable/ic_place_black_24dp"
+            android:title="Anotaciones" />
     </group>
 
 
