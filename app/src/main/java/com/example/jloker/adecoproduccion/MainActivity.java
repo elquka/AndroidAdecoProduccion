@@ -51,27 +51,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        campo = (Spinner) findViewById(R.id.campo);
-        List list = new ArrayList();
-        list.add("Doña Marina");
-        list.add("Oscuro");
-        list.add("Ita Caabo");
-        list.add("San Joaquin");
-        ArrayAdapter arrayAdapterCampo = new ArrayAdapter(this,android.R.layout.simple_dropdown_item_1line,list);
-        arrayAdapterCampo.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        campo.setAdapter(arrayAdapterCampo);
-        sector = (Spinner) findViewById(R.id.sector);
-        List list2 = new ArrayList();
-        list2.add("Seleccione Sector");
-        ArrayAdapter arrayAdapterSector = new ArrayAdapter(this,android.R.layout.simple_dropdown_item_1line,list2);
-        arrayAdapterSector.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        sector.setAdapter(arrayAdapterSector);
-        lote = (Spinner) findViewById(R.id.lote);
-        List list3 = new ArrayList();
-        list3.add("Seleccione Lote");
-        ArrayAdapter arrayAdapterLote = new ArrayAdapter(this,android.R.layout.simple_dropdown_item_1line,list3);
-        arrayAdapterLote.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        lote.setAdapter(arrayAdapterLote);
+
     }
 
     @Override

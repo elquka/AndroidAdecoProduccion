@@ -5,17 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jloker.adecoproduccion.MainActivity"><![CDATA[
-
-
->
-    ]]>
+    tools:context="com.example.jloker.adecoproduccion.MainActivity">
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
+        android:alpha="0.9"
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
@@ -41,20 +38,7 @@
 
 
 
-        <Spinner
-            android:id="@+id/campo"
-            android:textAlignment="center"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"/>
 
-        <Spinner
-            android:id="@+id/sector"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"/>
-        <Spinner
-            android:id="@+id/lote"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"/>
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -69,18 +53,21 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_weight="1">
+
                 <Button
                     android:id="@+id/button2"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    android:paddingTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginRight="10dp"
-                    android:drawableTop="@drawable/ic_tecnica_55dp"
                     android:background="@drawable/transparente40"
-                    android:textColor="@color/colorWhite"
-                    android:text="TECNICAS" />
+                    android:drawableTop="@drawable/ic_tecnica_55dp"
+                    android:paddingTop="20dp"
+                    android:text="TECNICAS"
+                    android:textColor="@color/colorWhite" />
+
                 <Button
                     android:id="@+id/button4"
                     android:layout_width="match_parent"
@@ -93,6 +80,18 @@
                     android:background="@drawable/transparente40"
                     android:textColor="@color/colorWhite"
                     android:text="MIP" />
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:paddingTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableTop="@drawable/ic_school_black_24dp"
+                    android:background="@drawable/transparente40"
+                    android:textColor="@color/colorWhite"
+                    android:text="WIKI" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
@@ -107,6 +106,7 @@
                     android:paddingTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginRight="20dp"
                     android:drawableTop="@drawable/ic_aplicaciones_55dp"
                     android:background="@drawable/transparente40"
@@ -124,6 +124,18 @@
                     android:background="@drawable/transparente40"
                     android:textColor="@color/colorWhite"
                     android:text="ANOTACIONES" />
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:paddingTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableTop="@drawable/ic_ir_55dp"
+                    android:background="@drawable/transparente40"
+                    android:textColor="@color/colorWhite"
+                    android:text="IR AL SITIO" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
